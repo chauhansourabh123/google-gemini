@@ -1,0 +1,373 @@
+.main {
+    background-color: #111111;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #111111;
+    padding: 25px 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    gap: 5px;
+    color: rgb(152, 151, 151);
+
+    .dropdown {
+        font-size: 11px;
+    }
+}
+
+.right {
+    gap: 15px;
+}
+
+.clock {
+    display: none;
+    color: white;
+}
+
+.listIcon {
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+
+.right button {
+    background-color: #303030;
+    border: none;
+    outline: none;
+    padding: 7px 14px;
+    border-radius: 10px;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    i {
+        color: pink;
+        font-size: 13px;
+    }
+}
+
+.userImage {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    background-color: #111111;
+}
+
+.inputbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #212121;
+    border-radius: 25px;
+}
+
+.inputbox input {
+    flex: 1;
+    padding: 5px 7px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    color: rgb(217, 217, 217);
+}
+
+.icons {
+    display: flex;
+    color: white;
+}
+
+.icons i {
+    cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 50%;
+}
+
+.icons i:hover {
+
+    background-color: #848484;
+}
+
+.footerContent {
+    margin-top: 15px;
+    font-size: 10px;
+    text-align: center;
+    color: rgb(203, 203, 203);
+}
+
+
+/* Middle */
+
+.middlecontainer {
+    overflow-y: scroll;
+    height: 79vh;
+    padding: 50px 0;
+
+}
+
+.middlecontent h1 {
+    font-size: 40px;
+    color: #484848;
+    font-weight: 600;
+}
+
+.middlecontent h1:first-child {
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(69, 69, 163), red);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-top: 70px;
+    gap: 15px;
+}
+
+.card {
+    min-width: 170px;
+    padding: 15px;
+    background-color: #222121;
+    border-radius: 15px;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card i {
+    font-size: 18px;
+    align-self: flex-end;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    padding: 7px 9px;
+    color: white;
+}
+
+.middleFooter {
+    background-color: #212121;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.para {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.para i {
+    font-size: 22px;
+}
+
+.para p {
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: rgb(95, 142, 192);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.04rem;
+}
+
+.buttons button:hover {
+    background-color: rgba(79, 74, 106, 0.3);
+}
+
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.cards,
+.result {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+.result {
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+.result-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+
+    p {
+        color: rgb(193, 193, 193);
+    }
+}
+
+.resultData {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    color: white;
+
+    p {
+        font-size: 14px;
+        color: rgb(193, 193, 193);
+        line-height: 28px;
+    }
+}
+
+.loader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.loader hr {
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+
+.main .sidebar {
+    display: inline-block;
+}
+
+.showbar {
+    width: 0;
+    overflow-x: hidden;
+    transition: all 1.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    background-color: #111111;
+}
+
+
+.showbar.hidden {
+    width: 100%;
+}
+
+
+@keyframes loader {
+    0% {
+        background-position: -800px 0px;
+    }
+
+    100% {
+        background-position: 800px 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .middlecontent {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .right button {
+        display: none;
+    }
+
+    .clock {
+        display: block;
+        color: white;
+    }
+
+    .listIcon {
+        display: block;
+    }
+}
+
+@media (max-width: 420px) {
+  
+
+.inputbox { 
+    padding: 2px 2px;
+    flex-direction: column;
+}
+
+.inputbox input {
+  align-self: flex-start;
+    padding: 5px 10px;
+}
+.icons{
+    align-self: end;
+}
+}

@@ -1,0 +1,155 @@
+.sidebar {
+    background-color: #2c2c2c;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 15px;
+    min-height: 100vh;
+    
+}
+
+.menubar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.menubar:hover {
+    background-color: rgb(54, 53, 53);
+}
+
+.menubar i {
+    color: white;
+    font-size: 22px;
+}
+
+.newChats {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 7px 8px;
+    border-radius: 25px;
+    color: rgb(138, 136, 136);
+    background-color: rgb(48, 48, 48);
+    cursor: pointer;
+}
+
+.newChats p {
+    font-size: 12px;
+}
+
+.recent {
+    margin-top: 20px;
+}
+
+.recent p {
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.aboutChats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 8px;
+    cursor: pointer;
+    animation: show 1.5s;
+}
+
+.aboutChats:hover {
+    border-radius: 25px;
+    background-color: #242425;
+}
+
+.aboutChats i {
+    font-size: 11px;
+    color: white;
+    padding: 6px;
+}
+
+.aboutChats i:hover {
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+.searchedTitile {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.help {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 25px;
+}
+
+.help:hover {
+    background-color: #242425;
+}
+
+.help .bi-record-fill {
+    font-size: 10px;
+    color: rgb(175, 29, 29);
+}
+
+.seprate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+}
+
+.description {
+    line-height: 15px;
+    padding: 0 8px;
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(178, 178, 178);
+}
+
+.description span {
+    color: rgb(81, 136, 157);
+}
+
+.description span i {
+    font-size: 5px;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+    .menubar{
+        display: none;
+    }
+}
